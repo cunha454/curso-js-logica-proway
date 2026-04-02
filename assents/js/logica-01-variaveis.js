@@ -66,3 +66,42 @@ function exemploBoolean(){
 
     alert("Férias Vencidas? " + tenhoFeriasVencidas);
 }
+
+function calcularSalario(){
+    let colaborador = "Judity Silva";
+    let email = "judity.gamer@gg.com";
+    let valorHora = 150.60; //por hora de streming
+    let horasPorMes = 50;
+    let beneficioDonate = 3500.98;
+
+    //Calcular o salário bruto
+    let salarioBruto = valorHora * horasPorMes
+
+    //Calcular o Salário líquido
+    let salarioLiquido = salarioBruto + beneficioDonate;
+
+    alert(
+        "Colaborador: " + colaborador +
+        "\nEmail " + email +
+        "\nValor por hora: R$ " + valorHora.toFixed(2) +
+        "\nHoras por mês: " + horasPorMes + "h" +
+        "\nSalário Bruto: " + salarioBruto.toFixed(2) +
+        "\nBenefício Donate: R$" + beneficioDonate.toFixed(2) +
+        "\nSalário líquido: R$ " + salarioLiquido.toFixed(2)
+    )
+}
+
+function calcularTempoMes(){
+    let segundosPorMinuto = 60;
+    let minutosPorHora = 60;
+    let horasPorDia = 24;
+
+    let segundosPorDia = segundosPorMinuto * minutosPorHora * horasPorDia;
+
+    alert(
+        "Segundos por minuto: " + segundosPorMinuto +
+        "\nMinutos por hora: " + minutosPorHora +
+        "\nHoras por dia: " + horasPorDia +
+        "\nSegundos por dia: " + segundosPorDia
+    );
+}
